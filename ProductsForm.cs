@@ -128,7 +128,7 @@ namespace POS_System
 
             using (SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["POSConnectionString"].ConnectionString))
             {
-                string sql = "UPDATE Products SET ProductName=@name, UnitPrice=@price, QuantityInStock=@qty WHERE ProductID=@id";
+                string sql = "UPDATE Products SET ProductName=@name, UnitPrice=@price, QuantityInStock=@qty WHERE ProductName=@name";
                 using (SqlCommand cmd = new SqlCommand(sql, conn))
                 {
                     cmd.Parameters.AddWithValue("@name", newName);
@@ -194,5 +194,9 @@ namespace POS_System
             nudQuantity.Value = 0;
         }
 
+        private void nudQuantity_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

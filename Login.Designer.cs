@@ -74,29 +74,35 @@
             txtPassword.Font = new Font("Segoe UI", 12F);
             txtPassword.Location = new Point(332, 324);
             txtPassword.Name = "txtPassword";
+            txtPassword.PasswordChar = '*';
             txtPassword.Size = new Size(333, 34);
             txtPassword.TabIndex = 3;
+            txtPassword.TextChanged += txtPassword_TextChanged;
             // 
             // btnLogin
             // 
-            btnLogin.Font = new Font("Segoe UI", 12F);
+            btnLogin.BackColor = Color.Green;
+            btnLogin.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnLogin.ForeColor = SystemColors.ButtonHighlight;
             btnLogin.Location = new Point(122, 413);
             btnLogin.Name = "btnLogin";
             btnLogin.Size = new Size(543, 40);
             btnLogin.TabIndex = 4;
             btnLogin.Text = "Login";
-            btnLogin.UseVisualStyleBackColor = true;
+            btnLogin.UseVisualStyleBackColor = false;
             btnLogin.Click += btnLogin_Click;
             // 
             // btnExit
             // 
-            btnExit.Font = new Font("Segoe UI", 12F);
+            btnExit.BackColor = Color.Firebrick;
+            btnExit.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnExit.ForeColor = SystemColors.ButtonHighlight;
             btnExit.Location = new Point(122, 477);
             btnExit.Name = "btnExit";
             btnExit.Size = new Size(543, 40);
             btnExit.TabIndex = 5;
             btnExit.Text = "Quit";
-            btnExit.UseVisualStyleBackColor = true;
+            btnExit.UseVisualStyleBackColor = false;
             btnExit.Click += btnExit_Click;
             // 
             // Login

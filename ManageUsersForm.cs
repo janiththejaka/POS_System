@@ -76,7 +76,7 @@ namespace POS_System
         {
             if (selectedUserID == -1)
             {
-                MessageBox.Show("Please select a user to delete.");
+                MessageBox.Show("Please select a user to delete the item.");
                 return;
             }
 

@@ -143,18 +143,23 @@
             // nudQuantity
             // 
             nudQuantity.Location = new Point(212, 86);
+            nudQuantity.Maximum = new decimal(new int[] { 1000, 0, 0, 0 });
             nudQuantity.Name = "nudQuantity";
             nudQuantity.Size = new Size(160, 34);
             nudQuantity.TabIndex = 1;
             nudQuantity.UseWaitCursor = true;
+            nudQuantity.Value = new decimal(new int[] { 100, 0, 0, 0 });
+            nudQuantity.ValueChanged += nudQuantity_ValueChanged;
             // 
             // nudUnitPrice
             // 
             nudUnitPrice.Location = new Point(19, 86);
+            nudUnitPrice.Maximum = new decimal(new int[] { 1000, 0, 0, 0 });
             nudUnitPrice.Name = "nudUnitPrice";
             nudUnitPrice.Size = new Size(160, 34);
             nudUnitPrice.TabIndex = 0;
             nudUnitPrice.UseWaitCursor = true;
+            nudUnitPrice.Value = new decimal(new int[] { 100, 0, 0, 0 });
             // 
             // groupBox2
             // 
