@@ -19,7 +19,7 @@ namespace POS_System
         string currentRole;
         DataTable saleItemsTable = new DataTable();
 
-        public NewSaleForm(int userID,string userName,string userRole)
+        public NewSaleForm(int userID, string userName, string userRole)
         {
             InitializeComponent();
             currentUserID = userID;
@@ -204,6 +204,20 @@ namespace POS_System
             Dashboard dash = new Dashboard(currentUserID, currentUsername, currentRole); // adjust role if needed
             dash.Show();
             this.Close();
+        }
+
+        private void btnRemoveItem_Click_1(object sender, EventArgs e)
+        {
+            // Remove the last item from the DataGridView/DataTable
+            if (saleItemsTable.Rows.Count > 0)
+            {
+                saleItemsTable.Rows.RemoveAt(saleItemsTable.Rows.Count - 1);
+                UpdateTotal();
+            }
+            else
+            {
+                MessageBox.Show("No items to remove.");
+            }
         }
     }
 }

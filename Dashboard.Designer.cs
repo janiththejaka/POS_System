@@ -35,13 +35,14 @@
             btnLogout = new Button();
             btnSalesReport = new Button();
             btnManageUsers = new Button();
-            groupBox1 = new GroupBox();
             label1 = new Label();
+            groupBox1 = new GroupBox();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // lblWelcome
             // 
+            lblWelcome.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblWelcome.AutoSize = true;
             lblWelcome.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblWelcome.Location = new Point(265, 77);
@@ -123,22 +124,6 @@
             btnManageUsers.UseVisualStyleBackColor = true;
             btnManageUsers.Click += btnManageUsers_Click;
             // 
-            // groupBox1
-            // 
-            groupBox1.Controls.Add(label1);
-            groupBox1.Controls.Add(btnManageUsers);
-            groupBox1.Controls.Add(btnSalesReport);
-            groupBox1.Controls.Add(btnLogout);
-            groupBox1.Controls.Add(btnManageProducts);
-            groupBox1.Controls.Add(btnNewSale);
-            groupBox1.Controls.Add(lblWelcome);
-            groupBox1.FlatStyle = FlatStyle.System;
-            groupBox1.Location = new Point(309, 42);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(557, 599);
-            groupBox1.TabIndex = 8;
-            groupBox1.TabStop = false;
-            // 
             // label1
             // 
             label1.AutoSize = true;
@@ -147,6 +132,24 @@
             label1.Name = "label1";
             label1.Size = new Size(0, 53);
             label1.TabIndex = 8;
+            // 
+            // groupBox1
+            // 
+            groupBox1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            groupBox1.BackColor = Color.White;
+            groupBox1.Controls.Add(lblWelcome);
+            groupBox1.Controls.Add(label1);
+            groupBox1.Controls.Add(btnManageUsers);
+            groupBox1.Controls.Add(btnSalesReport);
+            groupBox1.Controls.Add(btnLogout);
+            groupBox1.Controls.Add(btnManageProducts);
+            groupBox1.Controls.Add(btnNewSale);
+            groupBox1.FlatStyle = FlatStyle.System;
+            groupBox1.Location = new Point(309, 42);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(557, 599);
+            groupBox1.TabIndex = 8;
+            groupBox1.TabStop = false;
             // 
             // Dashboard
             // 
@@ -173,7 +176,7 @@
         private Button btnLogout;
         private Button btnSalesReport;
         private Button btnManageUsers;
-        private GroupBox groupBox1;
         private Label label1;
+        private GroupBox groupBox1;
     }
 }

@@ -156,6 +156,7 @@
             btnRemoveItem.TabIndex = 8;
             btnRemoveItem.Text = "Remove Item";
             btnRemoveItem.UseVisualStyleBackColor = false;
+            btnRemoveItem.Click += btnRemoveItem_Click_1;
             // 
             // btnBackToDashboard
             // 

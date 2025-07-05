@@ -45,7 +45,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(518, 30);
+            label1.Location = new Point(440, 45);
             label1.Name = "label1";
             label1.Size = new Size(200, 38);
             label1.TabIndex = 0;
@@ -68,7 +68,7 @@
             dgvUsers.Location = new Point(55, 160);
             dgvUsers.Name = "dgvUsers";
             dgvUsers.RowHeadersWidth = 51;
-            dgvUsers.Size = new Size(586, 380);
+            dgvUsers.Size = new Size(394, 380);
             dgvUsers.TabIndex = 2;
             dgvUsers.CellContentClick += dgvUsers_CellContentClick;
             // 
@@ -76,7 +76,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(726, 161);
+            label3.Location = new Point(619, 159);
             label3.Name = "label3";
             label3.Size = new Size(193, 28);
             label3.TabIndex = 3;
@@ -86,7 +86,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI Semilight", 10.8F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            label4.Location = new Point(726, 218);
+            label4.Location = new Point(619, 216);
             label4.Name = "label4";
             label4.Size = new Size(152, 25);
             label4.TabIndex = 4;
@@ -96,7 +96,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI Semilight", 10.8F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            label5.Location = new Point(726, 272);
+            label5.Location = new Point(619, 270);
             label5.Name = "label5";
             label5.Size = new Size(138, 25);
             label5.TabIndex = 5;
@@ -105,7 +105,7 @@
             // txtUsername
             // 
             txtUsername.BorderStyle = BorderStyle.FixedSingle;
-            txtUsername.Location = new Point(896, 218);
+            txtUsername.Location = new Point(789, 216);
             txtUsername.Name = "txtUsername";
             txtUsername.Size = new Size(259, 27);
             txtUsername.TabIndex = 6;
@@ -113,7 +113,7 @@
             // txtPassword
             // 
             txtPassword.BorderStyle = BorderStyle.FixedSingle;
-            txtPassword.Location = new Point(896, 270);
+            txtPassword.Location = new Point(789, 268);
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(259, 27);
             txtPassword.TabIndex = 7;
@@ -123,7 +123,7 @@
             btnAddUser.BackColor = Color.LimeGreen;
             btnAddUser.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnAddUser.ForeColor = SystemColors.ButtonHighlight;
-            btnAddUser.Location = new Point(729, 331);
+            btnAddUser.Location = new Point(622, 329);
             btnAddUser.Name = "btnAddUser";
             btnAddUser.Size = new Size(431, 41);
             btnAddUser.TabIndex = 8;
@@ -136,7 +136,7 @@
             button2.BackColor = Color.Firebrick;
             button2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button2.ForeColor = SystemColors.ButtonHighlight;
-            button2.Location = new Point(732, 499);
+            button2.Location = new Point(625, 497);
             button2.Name = "button2";
             button2.Size = new Size(425, 41);
             button2.TabIndex = 9;
@@ -148,7 +148,8 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1236, 624);
+            AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            ClientSize = new Size(1100, 624);
             Controls.Add(button2);
             Controls.Add(btnAddUser);
             Controls.Add(txtPassword);
@@ -160,6 +161,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "ManageUsersForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "ManageUsersForm";
             Load += ManageUsersForm_Load;
             ((System.ComponentModel.ISupportInitialize)dgvUsers).EndInit();

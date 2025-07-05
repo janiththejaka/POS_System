@@ -251,6 +251,7 @@
             Controls.Add(label1);
             Controls.Add(dgvProducts);
             Name = "ProductsForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "ProductsForm";
             Load += ProductsForm_Load;
             ((System.ComponentModel.ISupportInitialize)dgvProducts).EndInit();
