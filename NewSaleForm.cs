@@ -94,7 +94,7 @@ namespace POS_System
             {
                 total += (decimal)row["LineTotal"];
             }
-            lblTotal.Text = $"Total: {total:C}";
+            lblTotal.Text = $"Total: Rs. {total:F2}";
         }
 
         private void btnSaveSale_Click(object sender, EventArgs e)

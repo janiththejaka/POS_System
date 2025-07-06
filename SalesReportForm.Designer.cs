@@ -166,7 +166,7 @@
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1226, 652);
+            ClientSize = new Size(1226, 922);
             Controls.Add(btnBackToDashboard);
             Controls.Add(btnExportPDF);
             Controls.Add(dgvSaleDetails);

@@ -10,6 +10,7 @@ using System.Configuration;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 
+
 namespace POS_System
 {
     public partial class ProductsForm : Form
@@ -23,6 +24,8 @@ namespace POS_System
             currentUserID = userID;
             currentUserRole = userRole;
         }
+
+      
 
         private void label2_Click(object sender, EventArgs e)
         {
