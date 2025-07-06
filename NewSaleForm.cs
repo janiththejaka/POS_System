@@ -142,7 +142,7 @@ namespace POS_System
                     cmdItem.Parameters.AddWithValue("@unitPrice", unitPrice);
                     cmdItem.ExecuteNonQuery();
 
-                    // ✅ NEW: Update Products stock
+                    //Update Products stock
                     SqlCommand cmdUpdateStock = new SqlCommand(
                         "UPDATE Products SET QuantityInStock = QuantityInStock - @qty WHERE ProductID = @pid",
                         conn, tx
